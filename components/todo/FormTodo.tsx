@@ -15,7 +15,7 @@ export default function FormTodo({ addTodo }: Props) {
 
   const toast = useToast();
 
-  const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!value) {
       toast({
